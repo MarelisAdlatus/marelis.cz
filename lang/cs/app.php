@@ -13,4 +13,9 @@ return [
     |
     */
 
+    'home_navbar' => 'Domů',
+    'login_navbar' => 'Přihlásit',
+    'register_navbar' => 'Registrace',
+    'logout_navbar' => 'Odhlásit',
+
 ];

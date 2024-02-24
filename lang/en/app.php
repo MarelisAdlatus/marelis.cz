@@ -13,4 +13,9 @@ return [
     |
     */
 
+    'home_navbar' => 'Home',
+    'login_navbar' => 'Login',
+    'register_navbar' => 'Register',
+    'logout_navbar' => 'Logout',
+
 ];
