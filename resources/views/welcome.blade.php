@@ -292,7 +292,54 @@
             <h3 id="contact" class="border-bottom border-secondary border-1">Contact</h3>
             <p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             <div class="container">
-
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact-form">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal-contact-form" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Send message</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form class="row g-3" method="POST" id="contact-form" autocomplete="on">
+                    @csrf
+                    <div class="col-12">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="name" autocomplete="name">
+                        <span class="text-danger" role="alert"><strong id="errorName"></strong></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" autocomplete="email">
+                        <span class="text-danger" role="alert"><strong id="errorEmail"></strong></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="inputPhone" name="phone" autocomplete="tel">
+                        <span class="text-danger" role="alert"><strong id="errorPhone"></strong></span>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputMessage" class="form-label">Your message</label>
+                        <textarea class="form-control" id="inputMessage" name="message" rows="4"></textarea>
+                        <span class="text-danger" role="alert"><strong id="errorMessage"></strong></span>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkSendCopy" name="check-send-copy" checked>
+                            <label class="form-check-label" for="checkSendCopy">
+                                Send me a copy of this message
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" id="contact-send-button" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -338,6 +385,65 @@ $('.external-link').on('click', function(event) {
                 });
             }
         }
+    });
+});
+$('#modal-contact-form').on('hidden.bs.modal', function() { 
+    // modal reset
+    $(this).find('form').trigger('reset');
+    // clear errors
+    $(this).find('input,textarea').removeClass('is-invalid');
+    $(this).find('[role="alert"]').html('');
+}) ;
+$('#contact-form').on('submit', function(event) {
+    // contact-form
+    event.preventDefault();
+    // submit
+    $.ajax({
+        url: '/contact',
+        type: 'POST',
+        data: $(this).serialize(),
+        success: function() {
+            Swal.fire({
+                text: "Thank you for your message, we will contact you soon!",
+                icon: "success"
+            }).then((result) => {
+                $('#modal-contact-form').modal('hide');
+            });
+        },
+        error: function(xhr, status, error) {
+            // there was an error
+            var json = (xhr.responseJSON) ? xhr.responseJSON : JSON.parse(xhr.responseText);
+            if (json.errors) {
+                if (json.errors.name) {
+                    $('#inputName').addClass('is-invalid');
+                    $('#errorName').html(json.errors.name[0]);
+                } else {
+                    $('#inputName').removeClass('is-invalid');
+                    $('#errorName').html('');
+                }
+                if (json.errors.email) {
+                    $('#inputEmail').addClass('is-invalid');
+                    $('#errorEmail').html(json.errors.email[0]);
+                } else {
+                    $('#inputEmail').removeClass('is-invalid');
+                    $('#errorEmail').html('');
+                }
+                if (json.errors.phone) {
+                    $('#inputPhone').addClass('is-invalid');
+                    $('#errorPhone').html(json.errors.phone[0]);
+                } else {
+                    $('#inputPhone').removeClass('is-invalid');
+                    $('#errorPhone').html('');
+                }
+                if (json.errors.message) {
+                    $('#inputMessage').addClass('is-invalid');
+                    $('#errorMessage').html(json.errors.message[0]);
+                } else {
+                    $('#inputMessage').removeClass('is-invalid');
+                    $('#errorMessage').html('');
+                }
+            }
+        }        
     });
 });
 </script>

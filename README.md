@@ -17,10 +17,10 @@ This project runs with **Laravel version 11**
 - [x] Bootstrap icons
 - [x] Language switching and basic welcome
 - [x] Website layout with jQuery and SweetAlert2
+- [x] Modal contact form with sending to email
 
 ## Maybe in the future
 
-- [ ] Modal contact form with sending to email
 - [ ] QR code with a link to an external page
 - [ ] View translations
 - [ ] Translation of notification emails
