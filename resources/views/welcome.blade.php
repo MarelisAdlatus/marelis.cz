@@ -364,9 +364,27 @@ $('.external-link').on('click', function(event) {
     event.preventDefault();
     var site = $(this).attr('name');
     var link = $(this).attr('href');
+    // request a QR code image
+    $.ajax({
+        url: '/qrcode/text',
+        type: 'POST',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+        },
+        data: {
+            format: 'svg',
+            size: '120',
+            margin: '0',
+            encoding: 'UTF-8',
+            text: btoa(link),
+        },
+        success: function(data) {
+            $('#external-qrcode').html(data);
+        }
+    });
     Swal.fire({
         title: 'Go to ' + site + ' ?',
-        html: '<a href="' + link + '" target="_blank">' + link + '</a>',
+        html: '<div id="external-qrcode"></div><br /><a href="' + link + '" target="_blank">' + link + '</a>',
         showCancelButton: true,
         cancelButtonText: 'Cancel',
         showConfirmButton: true,

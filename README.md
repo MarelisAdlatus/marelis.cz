@@ -18,10 +18,10 @@ This project runs with **Laravel version 11**
 - [x] Language switching and basic welcome
 - [x] Website layout with jQuery and SweetAlert2
 - [x] Modal contact form with sending to email
+- [x] QR code with a link to an external page
 
 ## Maybe in the future
 
-- [ ] QR code with a link to an external page
 - [ ] View translations
 - [ ] Translation of notification emails
 - [ ] User login and registration
@@ -31,6 +31,13 @@ This project runs with **Laravel version 11**
 - [ ] Advanced user profile with avatar image
 - [ ] User roles and permissions
 - [ ] Upgrade laravel/framework to the latest version
+
+## :white_check_mark: Release v0.2
+
+- Modal contact form with sending to email
+- QR code with a link to an external page
+
+https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.2
 
 ## :white_check_mark: Release v0.1
 
