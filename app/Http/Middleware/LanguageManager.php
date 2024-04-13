@@ -18,8 +18,18 @@ class LanguageManager
     {
         if (session()->has('locale')) {
             App::setLocale(session()->get('locale'));
+        } else {
+            $availableLocales = config('settings.available_locales');
+            $lang = $request->getPreferredLanguage($availableLocales);
+            if ($lang) {
+                session()->put('locale', $lang);
+            } else {
+                // default
+                session()->put('locale', env('APP_LOCALE', 'en')); 
+            }
+            App::setLocale(session()->get('locale'));
         }
-        
+
         return $next($request);
     }
 }
