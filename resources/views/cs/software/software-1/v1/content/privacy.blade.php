@@ -1,0 +1,3 @@
+<h3 id="privacy" class="border-bottom border-secondary border-1">Soukromí</h3>
+<p class="fs-5">Přidáním zásad ochrany soukromí do záznamu aplikace transparentně sdělíte, jakým způsobem budete zacházet s citlivými daty o uživatelích a zařízeních. Zásady ochrany soukromí společně s případnými oznámeními musí jasně vysvětlit, jak aplikace shromažďuje, využívá a sdílí údaje o uživatelích. Musí být uvedeny i typy stran, se kterými jsou údaje sdíleny.</p>
+<p class="fs-5">Zajistěte, aby zásady ochrany soukromí byly dostupné na aktivní adrese URL, vztahovaly se na vaši aplikaci a výslovně pojednávaly o ochraně soukromí uživatele. Zásady ochrany soukromí musí mít i aplikace, které nenačítají žádné osobní ani citlivé údaje o uživatelích.</p>

@@ -1,0 +1,3 @@
+<h3 id="privacy" class="border-bottom border-secondary border-1">Privacy</h3>
+<p class="fs-5">By adding a privacy policy to your app record, you'll be transparent about how you'll handle sensitive user and device data. The privacy policy, along with any notices, must clearly explain how the application collects, uses and shares user data. The types of parties with whom the data is shared must also be specified.</p>
+<p class="fs-5">Make sure the privacy policy is available at an active URL, applies to your app, and explicitly addresses user privacy. Applications that do not collect any personal or sensitive user data must also have a privacy policy.</p>
