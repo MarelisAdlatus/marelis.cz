@@ -9,21 +9,19 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
         <div class="p-5 bg-primary text-white text-center">
-            <h1>You can do more than you think</h1>
-            <p>For happiness</p> 
+            <h1>{{ __('app.top_message') }}</h1>
+            <p>{{ __('app.top_comment') }}</p> 
         </div>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="#top">
+                <a class="navbar-brand" href="/">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -100,6 +98,5 @@
             </footer>
         </div>
     </div>
-    @yield('scripts')
 </body>
 </html>

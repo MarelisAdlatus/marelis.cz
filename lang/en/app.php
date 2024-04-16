@@ -13,9 +13,18 @@ return [
     |
     */
 
+    'top_message' => 'You can do more than you think',
+    'top_comment' => 'For happiness',
+
     'home_navbar' => 'Home',
     'login_navbar' => 'Login',
     'register_navbar' => 'Register',
     'logout_navbar' => 'Logout',
+
+    'download_table_name' => 'File',
+    'download_table_size' => 'Size',
+    'download_table_action' => 'Download',
+
+    'contact_mail_subject' => 'Contact email',
 
 ];
