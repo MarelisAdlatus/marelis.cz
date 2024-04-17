@@ -18,6 +18,8 @@ class ContactFormController extends Controller
             'message' => 'required|min:3|max:1000'
         ]);
 
+        $lang = app()->getLocale();
+
         // create new contact
         $contact = Contact::create($request->all());
 
@@ -30,10 +32,10 @@ class ContactFormController extends Controller
         // form checkbox: "Send me a copy of this message ?"
         if ($request->has('check-send-copy')) {
             // send email to admin and copy to guest
-            Mail::to($admin)->cc($contact->email)->queue($mail->onQueue('notification'));
+            Mail::to($admin)->cc($contact->email)->locale($lang)->queue($mail->onQueue('notification'));
         } else {
             // send email to admin
-            Mail::to($admin)->queue($mail->onQueue('notification'));
+            Mail::to($admin)->locale($lang)->queue($mail->onQueue('notification'));
         }
 
         return response('Created', 201);

@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '[' . config('app.name') . '] Contact Mail',
+            subject: '[' . config('app.name') . '] ' . __('app.contact_mail_subject'),
         );
     }
 

@@ -26,5 +26,13 @@ return [
     'download_table_action' => 'Download',
 
     'contact_mail_subject' => 'Contact email',
+    'contact_mail_thanks' => 'Thank you for your message, we will contact you soon!',
+    'contact_mail_form_title' => 'From the contact form',
+    'contact_mail_form_name' => 'Name',
+    'contact_mail_form_email' => 'Email',
+    'contact_mail_form_phone' => 'Phone',
+    'contact_mail_message_title' => 'Message',
+    'contact_mail_button' => 'Visit the website',
+    'contact_mail_greeting' => 'Thanks',
 
 ];

@@ -28,10 +28,10 @@ This project runs with **Laravel version 11**
 - [x] QR code with a link to an external page
 - [x] Content management and view translations
 - [x] Diagrams, graphs, tables, 3D views
+- [x] Translation of contact emails
 
 ## <a id="maybe-in-the-future"></a> Maybe in the future
 
-- [ ] Translation of contact emails
 - [ ] Reporting software (error, help, other)
 - [ ] User login and registration
 - [ ] User verification and password change by email

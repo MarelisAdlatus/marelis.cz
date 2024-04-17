@@ -1,22 +1,22 @@
 <x-mail::message>
-# Thank you for your message, we will contact you soon!
+# @lang('app.contact_mail_thanks')
 
-## From the contact form:
+## @lang('app.contact_mail_form_title'):
 
-- Name: **{{ $name }}**
-- Email: **{{ $email }}**
-- Phone: **{{ $phone }}**
+- @lang('app.contact_mail_form_name'): **{{ $name }}**
+- @lang('app.contact_mail_form_email'): **{{ $email }}**
+- @lang('app.contact_mail_form_phone'): **{{ $phone }}**
 
-## Message:
+## @lang('app.contact_mail_message_title'):
 
 <x-mail::panel>
 <pre>{{ $message }}</pre>
 </x-mail::panel>
 
 <x-mail::button :url="config('app.url')" color="success">
-Visit the website
+@lang('app.contact_mail_button')
 </x-mail::button>
 
-Thanks,<br>
+@lang('app.contact_mail_greeting'),<br>
 {{ config('app.name') }}
 </x-mail::message>
