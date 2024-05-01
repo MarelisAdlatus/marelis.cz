@@ -25,14 +25,4 @@ return [
     'download_table_size' => 'Velikost',
     'download_table_action' => 'Stažení',
 
-    'contact_mail_subject' => 'Kontaktní e-mail',
-    'contact_mail_thanks' => 'Děkujeme za vaši zprávu, brzy se vám ozveme!',
-    'contact_mail_form_title' => 'Z kontaktního formuláře',
-    'contact_mail_form_name' => 'Jméno',
-    'contact_mail_form_email' => 'Email',
-    'contact_mail_form_phone' => 'Telefon',
-    'contact_mail_message_title' => 'Zpráva',
-    'contact_mail_button' => 'Navštivte web',
-    'contact_mail_greeting' => 'Díky',
-
 ];

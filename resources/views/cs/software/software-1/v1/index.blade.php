@@ -16,6 +16,7 @@
             @include($path . '.content.install')
             @include($path . '.content.usage')
             @include($path . '.content.privacy')
+            @include($path . '.content.report')
             @include($path . '.content.license')
         </div>
         <div class="col-md-2">
@@ -46,6 +47,9 @@
                     </a>
                     <a href="#privacy" class="list-group-item list-group-item-action list-group-item-light">
                         <div class="d-flex align-items-center fs-6"><i class="bi bi-record-fill text-primary opacity-75 pe-2"></i><div>Soukromí</div></div>
+                    </a>
+                    <a href="#report" class="list-group-item list-group-item-action list-group-item-light">
+                        <div class="d-flex align-items-center fs-6"><i class="bi bi-record-fill text-primary opacity-75 pe-2"></i><div>Report</div></div>
                     </a>
                     <a href="#license" class="list-group-item list-group-item-action list-group-item-light">
                         <div class="d-flex align-items-center fs-6"><i class="bi bi-record-fill text-primary opacity-75 pe-2"></i><div>Licence</div></div>

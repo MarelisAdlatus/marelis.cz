@@ -20,7 +20,10 @@
         "@google/model-viewer": "^3.4.0",
         "apexcharts": "^3.48.0",
         "glightbox": "^3.3.0",
+        "js-base64": "^3.7.7",
+        "pako": "^2.1.0",
         "papaparse": "^5.4.1",
+        "suneditor": "^2.46.1",
         "sweetalert2": "^11.10.5",
         "zoomist": "^2.0.11"
     }

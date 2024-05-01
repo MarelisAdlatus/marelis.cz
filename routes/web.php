@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ReportFormController;
 use App\Http\Controllers\QRCodeController;
 use App\Http\Controllers\PlantUMLController;
 use App\Http\Controllers\DownloadController;
@@ -16,6 +17,8 @@ Route::get('/', function () {
 Route::get('lang/change', [LangController::class, 'change'])->name('change-lang');
 
 Route::post('/contact', [ContactFormController::class, 'ContactForm'])->name('contact.store');
+
+Route::post('/report', [ReportFormController::class, 'ReportForm']);
 
 Route::controller(QRCodeController::class)->group(function () {
     Route::post('/qrcode/text', 'GenerateFromText');

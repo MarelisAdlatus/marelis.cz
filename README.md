@@ -29,10 +29,11 @@ This project runs with **Laravel version 11**
 - [x] Content management and view translations
 - [x] Diagrams, graphs, tables, 3D views
 - [x] Translation of contact emails
+- [x] Reporting software (error, help, other)
 
 ## <a id="maybe-in-the-future"></a> Maybe in the future
 
-- [ ] Reporting software (error, help, other)
+- [ ] Markdown parser with syntax highlighting
 - [ ] User login and registration
 - [ ] User verification and password change by email
 - [ ] User's time zone at registration
@@ -358,7 +359,10 @@ https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.1
 - [model-viewer](https://github.com/google/model-viewer)
 - [zoomist](https://github.com/cotton123236/zoomist)
 - [glightbox](https://github.com/biati-digital/glightbox)
-
+- [purifier](https://github.com/mewebstudio/Purifier)
+- [suneditor](https://github.com/JiHong88/suneditor)
+- [pako](https://github.com/nodeca/pako)
+- [js-base64](https://github.com/dankogai/js-base64)
 
 ## <a id="used-services"></a> Used services
 

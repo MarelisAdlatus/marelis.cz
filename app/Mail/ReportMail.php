@@ -8,20 +8,20 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use App\Models\Contact;
+use App\Models\Report;
 
-class ContactMail extends Mailable
+class ReportMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $contact;
+    protected $report;
 
     /**
      * Create a new message instance.
      */
-    public function __construct(Contact $contact)
+    public function __construct(Report $report)
     {
-        $this->contact = $contact;
+        $this->report = $report;
     }
 
     /**
@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '[' . config('app.name') . '] ' . __('mail.contact_subject'),
+            subject: '[' . config('app.name') . '] ' . __('mail.report_subject'),
         );
     }
 
@@ -40,12 +40,14 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'mail.contact-mail',
+            markdown: 'mail.report-mail',
             with: [
-                'name' => $this->contact['name'],
-                'email' => $this->contact['email'],
-                'phone' => $this->contact['phone'],
-                'message' => $this->contact['message'],
+                'group' => $this->report['group'],
+                'item' => $this->report['item'],
+                'name' => $this->report['name'],
+                'email' => $this->report['email'],
+                'option' => $this->report['option'],
+                'message' => clean($this->report['message']),
             ],
         );
     }

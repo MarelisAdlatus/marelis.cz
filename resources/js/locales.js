@@ -42,3 +42,14 @@ export const ApexChartsLocales = [
       }
     }
   ];
+
+export const ReportFormLocales = {
+  "en": {
+    "message": "Thank you for your report, we will contact you soon!",
+    "confirm_button": "Close",
+  },
+  "cs": {
+    "message": "Děkujeme za vaši zprávu, brzy se vám ozveme!",
+    "confirm_button": "Zavřít",
+  }
+};

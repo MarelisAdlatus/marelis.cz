@@ -17,6 +17,15 @@ import { ApexChartsLocales } from './locales';
 
 import '@google/model-viewer';
 
+import SunEditor from 'suneditor';
+import SunEditorPlugins from 'suneditor/src/plugins';
+import SunEditorLang from 'suneditor/src/lang';
+
+import Pako from 'pako';
+import { Base64 } from 'js-base64';
+
+import { ReportFormLocales } from './locales';
+
 /* active link */
 $('body').on('click', function (event) {
     $('.active-link').removeClass('active');
@@ -173,6 +182,79 @@ $('#contact-form').on('submit', function(event) {
                 } else {
                     $('#inputMessage').removeClass('is-invalid');
                     $('#errorMessage').html('');
+                }
+            }
+        }        
+    });
+});
+
+/* wysiwyg editors */
+var wysiwygEditor = [];
+$('.wysiwyg-editor').each(function() {
+    var self = this;
+    var langAttr = $(self).attr('lang');
+    wysiwygEditor[self.id] = SunEditor.create(self.id, {
+        plugins: SunEditorPlugins,
+        width: 'auto',
+        height: 200,
+        buttonList: [
+            [
+            'undo', 'redo', 'font', 'fontSize', 'formatBlock', 'paragraphStyle', 'blockquote',
+            'bold', 'underline', 'italic', 'strike', 'subscript', 'superscript',
+            'fontColor', 'hiliteColor', 'textStyle', 'removeFormat',
+            'outdent', 'indent', 'align', 'horizontalRule', 'list', 'lineHeight',
+            'table', 'link', 'image', 'fullScreen', 'showBlocks',
+            ]
+        ],
+        lang: SunEditorLang[langAttr]
+    });
+});
+
+/* report form */
+$('#report-form').on('submit', function(event) {
+    event.preventDefault();
+    var self = this;
+    var langAttr = $(self).attr('lang');
+    var u8a = Pako.deflate(wysiwygEditor['input-message'].getContents());
+    var b64encoded = Base64.fromUint8Array(u8a);
+    // submit
+    var formData = $(self).serializeArray();
+    formData.push({name: 'message', value: b64encoded});
+    $.ajax({
+        url: '/report',
+        type: 'POST',
+        data: formData,
+        success: function() {
+            Swal.fire({
+                text: ReportFormLocales[langAttr]['message'],
+                confirmButtonText: ReportFormLocales[langAttr]['confirm_button'],
+                icon: "success"
+            });
+        },
+        error: function(xhr, status, error) {
+            // there was an error
+            var json = (xhr.responseJSON) ? xhr.responseJSON : JSON.parse(xhr.responseText);
+            if (json.errors) {
+                if (json.errors.name) {
+                    $('#input-name').addClass('is-invalid');
+                    $('#error-name').html(json.errors.name[0]);
+                } else {
+                    $('#input-name').removeClass('is-invalid');
+                    $('#error-name').html('');
+                }
+                if (json.errors.email) {
+                    $('#input-email').addClass('is-invalid');
+                    $('#error-email').html(json.errors.email[0]);
+                } else {
+                    $('#input-email').removeClass('is-invalid');
+                    $('#error-email').html('');
+                }
+                if (json.errors.message) {
+                    $('#input-message-border').addClass('border border-danger');
+                    $('#error-message').html(json.errors.message[0]);
+                } else {
+                    $('#input-message-border').removeClass('border border-danger');
+                    $('#error-message').html('');
                 }
             }
         }        

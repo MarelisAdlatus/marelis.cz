@@ -20,6 +20,7 @@ export default defineConfig({
             output: {
                 manualChunks: (id) => {
                     if (id.includes('apexcharts')) return 'apexcharts';
+                    if (id.includes('suneditor')) return 'suneditor';
                     if (id.includes('@google/model-viewer')) return 'model-viewer';
                     if (id.includes('three')) return 'three';
                 },

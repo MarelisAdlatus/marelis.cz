@@ -1,6 +1,7 @@
 @import '/node_modules/zoomist/zoomist.css'; 
 @import '/node_modules/apexcharts/dist/apexcharts.css'; 
 @import '/node_modules/glightbox/dist/css/glightbox.css';
+@import '/node_modules/suneditor/dist/css/suneditor.min.css';
 
 html {
   scroll-padding-top: 5rem;
