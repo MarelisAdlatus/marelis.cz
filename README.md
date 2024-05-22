@@ -30,10 +30,10 @@ This project runs with **Laravel version 11**
 - [x] Diagrams, graphs, tables, 3D views
 - [x] Translation of contact emails
 - [x] Reporting software (error, help, other)
+- [x] Syntax highlighting with copy button
 
 ## <a id="maybe-in-the-future"></a> Maybe in the future
 
-- [ ] Markdown parser with syntax highlighting
 - [ ] User login and registration
 - [ ] User verification and password change by email
 - [ ] User's time zone at registration

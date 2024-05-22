@@ -26,6 +26,25 @@ import { Base64 } from 'js-base64';
 
 import { ReportFormLocales } from './locales';
 
+import { getHighlighterCore } from 'shiki/core';
+import getWasm from 'shiki/wasm';
+
+const highlighter = await getHighlighterCore({
+  themes: [
+    import('shiki/themes/dracula.mjs'),
+    import('shiki/themes/github-dark.mjs'),
+    import('shiki/themes/github-light.mjs'),
+  ],
+  langs: [
+    import('shiki/langs/java.mjs'),
+    import('shiki/langs/kotlin.mjs'),
+    import('shiki/langs/bash.mjs'),
+  ],
+  loadWasm: getWasm
+});
+
+import { ClipboardButtonLocales } from './locales';
+
 /* active link */
 $('body').on('click', function (event) {
     $('.active-link').removeClass('active');
@@ -262,6 +281,39 @@ $('#report-form').on('submit', function(event) {
 });
 
 $(document).ready(function() {
+
+    /* highlight code */
+    $('.highlight-code').each(function () {
+        var self = this;
+        var langAttr = $(self).attr('lang');
+        var themeAttr = $(self).attr('theme');
+        var code = $(self).text();
+        // removes all newlines at the start
+        while (code.charAt(0) === '\n') {
+            code = code.substring(1);
+        }
+        var html = '<div class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10">'
+          + '<div class="text-uppercase ms-2">' + langAttr + '</div>'
+          + '<button type="button" class="highlight-copy btn btn-outline-dark btn-sm border-0 me-1" data-bs-toggle="tooltip" title="'
+          + ClipboardButtonLocales[document.documentElement.lang]['tooltip'] + '"><i class="bi bi-clipboard fs-4"></i></button>'
+          + '</div>';
+        var highlight = highlighter.codeToHtml(code, {
+            lang: langAttr,
+            theme: themeAttr
+        });
+        $(self).html(html + highlight);
+        $(self).find('pre.shiki').addClass('ps-3 pt-2 pb-2');
+        $(self).find('.highlight-copy').on('click', function () {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(code);
+            }
+            var button = this;
+            $(button).html('<i class="bi bi-clipboard-check fs-4"></i>');
+            setTimeout(function () {
+                $(button).html('<i class="bi bi-clipboard fs-4"></i>');
+            }, 1000);
+        });
+    });
 
     /* zoomist container */
     $('.zoomist-container').each(function () {

@@ -53,3 +53,12 @@ export const ReportFormLocales = {
     "confirm_button": "Zavřít",
   }
 };
+
+export const ClipboardButtonLocales = {
+  "en": {
+    "tooltip": "Copy to clipboard",
+  },
+  "cs": {
+    "tooltip": "Zkopírovat do schránky",
+  }
+};

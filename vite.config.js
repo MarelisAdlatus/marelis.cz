@@ -23,8 +23,15 @@ export default defineConfig({
                     if (id.includes('suneditor')) return 'suneditor';
                     if (id.includes('@google/model-viewer')) return 'model-viewer';
                     if (id.includes('three')) return 'three';
+                    if (id.includes('wasm')) return 'wasm';
+                    if (id.includes('shiki')) return 'shiki';
                 },
             },
+        },
+    },
+    esbuild: {
+        supported: {
+          'top-level-await': true,
         },
     },
 });
