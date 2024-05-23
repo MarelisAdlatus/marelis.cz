@@ -43,7 +43,7 @@ const highlighter = await getHighlighterCore({
   loadWasm: getWasm
 });
 
-import { ClipboardButtonLocales } from './locales';
+import { HighlightCodeLocales } from './locales';
 
 /* active link */
 $('body').on('click', function (event) {
@@ -285,6 +285,7 @@ $(document).ready(function() {
     /* highlight code */
     $('.highlight-code').each(function () {
         var self = this;
+        var lang = document.documentElement.lang === null ? 'en' : document.documentElement.lang;
         var langAttr = $(self).attr('lang');
         var themeAttr = $(self).attr('theme');
         var code = $(self).text();
@@ -295,7 +296,7 @@ $(document).ready(function() {
         var html = '<div class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10">'
           + '<div class="text-uppercase ms-2">' + langAttr + '</div>'
           + '<button type="button" class="highlight-copy btn btn-outline-dark btn-sm border-0 me-1" data-bs-toggle="tooltip" title="'
-          + ClipboardButtonLocales[document.documentElement.lang]['tooltip'] + '"><i class="bi bi-clipboard fs-4"></i></button>'
+          + HighlightCodeLocales[lang]['copy_button_tooltip'] + '"><i class="bi bi-clipboard fs-4"></i></button>'
           + '</div>';
         var highlight = highlighter.codeToHtml(code, {
             lang: langAttr,

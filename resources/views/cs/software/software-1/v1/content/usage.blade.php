@@ -1,6 +1,63 @@
 <h3 id="usage" class="border-bottom border-secondary border-1">Používání</h3>
 <p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
+<div class="highlight-code mb-3" lang="java" theme="github-light">
+public class UploadWorker extends Worker {
+    public UploadWorker(
+        @NonNull Context context,
+        @NonNull WorkerParameters params) {
+        super(context, params);
+    }
+
+    @Override
+    public Result doWork() {
+
+        // Do the work here--in this case, upload the images.
+        uploadImages();
+
+        // Indicate whether the work finished successfully with the Result
+        return Result.success();
+    }
+}
+</div>
+
+<p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+<div class="highlight-code" lang="kotlin" theme="github-dark">
+class UploadWorker(appContext: Context, workerParams: WorkerParameters):
+        Worker(appContext, workerParams) {
+    override fun doWork(): Result {
+
+        // Do the work here--in this case, upload the images.
+        uploadImages()
+
+        // Indicate whether the work finished successfully with the Result
+        return Result.success()
+    }
+}
+</div>
+
+<p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+<div class="highlight-code" lang="bash" theme="dracula">
+#!/bin/bash
+# Declare a variable
+AGE=20
+
+# Use a conditional statement
+if [ $AGE -gt 18 ]
+then
+    echo 'You are old enough to vote'
+else
+    echo 'You are not old enough to vote'
+fi
+
+# Output:
+# 'You are old enough to vote'
+</div>
+
+<p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
 <div class="p-3 bg-success bg-opacity-10 border-start border-success border-4 fs-5 mb-4">
     Můžete provést následující
 </div>

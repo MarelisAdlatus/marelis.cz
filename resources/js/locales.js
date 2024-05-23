@@ -54,11 +54,11 @@ export const ReportFormLocales = {
   }
 };
 
-export const ClipboardButtonLocales = {
+export const HighlightCodeLocales = {
   "en": {
-    "tooltip": "Copy to clipboard",
+    "copy_button_tooltip": "Copy to clipboard",
   },
   "cs": {
-    "tooltip": "Zkopírovat do schránky",
+    "copy_button_tooltip": "Zkopírovat do schránky",
   }
 };
