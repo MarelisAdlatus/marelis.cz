@@ -17,11 +17,11 @@
                     <p class="card-text fs-5">
                         <strong>3D model brýlí</strong><br/>
                         od
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="nattsol" href="https://skfb.ly/oRxzv">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="nattsol" href="https://skfb.ly/oRxzv">
                             nattsol
                         </a>
                             je licencován pod
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
                             Creative Commons Attribution
                         </a>
                     </p>
@@ -41,11 +41,11 @@
                     <p class="card-text fs-5">
                         <strong>Yodova busta</strong><br/>
                         od
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="bmoshe" href="https://www.thingiverse.com/bmoshe">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="bmoshe" href="https://www.thingiverse.com/bmoshe">
                             bmoshe
                         </a>
                             je licencován pod
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons - Attribution - Share Alike" href="https://creativecommons.org/licenses/by-sa/3.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="Creative Commons - Attribution - Share Alike" href="https://creativecommons.org/licenses/by-sa/3.0">
                             Creative Commons - Attribution - Share Alike
                         </a>
                     </p>
@@ -65,11 +65,11 @@
                     <p class="card-text fs-5">
                         <strong>Usmívající se dítě Groot</strong><br/>
                         od
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Raxian" href="https://www.thingiverse.com/Raxian">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="Raxian" href="https://www.thingiverse.com/Raxian">
                             Raxian
                         </a>
                             je licencován pod
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
                             Creative Commons Attribution
                         </a>
                     </p>

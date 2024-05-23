@@ -17,11 +17,11 @@
                     <p class="card-text fs-5">
                         <strong>Glasses 3D model</strong><br/>
                         by
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="nattsol" href="https://skfb.ly/oRxzv">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="nattsol" href="https://skfb.ly/oRxzv">
                             nattsol
                         </a>
                             is licensed under
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
                             Creative Commons Attribution
                         </a>
                     </p>
@@ -41,11 +41,11 @@
                     <p class="card-text fs-5">
                         <strong>Yoda bust</strong><br/>
                         by
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="bmoshe" href="https://www.thingiverse.com/bmoshe">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="bmoshe" href="https://www.thingiverse.com/bmoshe">
                             bmoshe
                         </a>
                             is licensed under
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons - Attribution - Share Alike" href="https://creativecommons.org/licenses/by-sa/3.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="Creative Commons - Attribution - Share Alike" href="https://creativecommons.org/licenses/by-sa/3.0">
                             Creative Commons - Attribution - Share Alike
                         </a>
                     </p>
@@ -65,11 +65,11 @@
                     <p class="card-text fs-5">
                         <strong>Smiling Baby Groot</strong><br/>
                         by
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Raxian" href="https://www.thingiverse.com/Raxian">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="Raxian" href="https://www.thingiverse.com/Raxian">
                             Raxian
                         </a>
                             is licensed under
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="Creative Commons Attribution" href="https://creativecommons.org/licenses/by/4.0">
                             Creative Commons Attribution
                         </a>
                     </p>
