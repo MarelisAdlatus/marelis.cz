@@ -31,10 +31,12 @@ then
     exit 1
 fi
 
+content_root="public/storage/content"
+
 # content type selection
 select_content_type () {
     echo "Content Type ?"
-    select name in $(find "public/content" -maxdepth 1 -mindepth 1 -type d -printf '%f\n') ; do
+    select name in $(find "$content_root" -maxdepth 1 -mindepth 1 -type d -printf '%f\n') ; do
         content_type=$name
         break;
     done
@@ -44,7 +46,7 @@ select_content_type () {
 # content name selection
 select_content_name () {
     echo "Content Name ?"
-    select name in $(find "public/content/$content_type" -maxdepth 1 -mindepth 1 -type d -printf '%f\n') ; do
+    select name in $(find "$content_root/$content_type" -maxdepth 1 -mindepth 1 -type d -printf '%f\n') ; do
         content_name=$name
         break;
     done
@@ -54,7 +56,7 @@ select_content_name () {
 # content version selection
 select_content_version() {
     echo "Content Version ?"
-    select version in $(find "public/content/$content_type/$content_name" -maxdepth 1 -mindepth 1 -type d -printf '%f\n'); do
+    select version in $(find "$content_root/$content_type/$content_name" -maxdepth 1 -mindepth 1 -type d -printf '%f\n'); do
         content_version=$version
         break;
     done
@@ -64,13 +66,13 @@ select_content_version() {
 # content clean
 content_clean() {
     echo "Clean ..."
-    find "public/content/$content_type/$content_name/$content_version" -name "*.glb" -exec rm -v {} \;
+    find "$content_root/$content_type/$content_name/$content_version" -name "*.glb" -exec rm -v {} \;
 }
 
 # content export
 content_export() {
     echo "Export ..."
-    blender --background --python export-glb.py -- "public/content/$content_type/$content_name/$content_version"
+    blender --background --python export-glb.py -- "$content_root/$content_type/$content_name/$content_version"
 }
 
 # main menu
