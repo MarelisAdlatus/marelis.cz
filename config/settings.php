@@ -2,7 +2,7 @@
 
 return [
 
-    'admin_email' => 'marelis.adlatus@gmail.com',
+    'admin_email' => 'admin@marelis.cz',
 
     'available_locales' => array('en', 'cs'),
 
