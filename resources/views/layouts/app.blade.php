@@ -9,6 +9,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ689C56PH"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MZ689C56PH');</script>
+
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
