@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\ReportFormController;
@@ -13,6 +14,8 @@ Route::get('/', function () {
     $path = app()->getLocale();
     return view($path . '.welcome', compact('path'));
 });
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 Route::get('lang/change', [LangController::class, 'change'])->name('change-lang');
 
