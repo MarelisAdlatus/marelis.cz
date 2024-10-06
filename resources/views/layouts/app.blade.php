@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="bg-primary text-white text-center d-flex justify-content-center align-items-center position-relative"
+        <div class="bg-dark text-white text-center d-flex justify-content-center align-items-center position-relative"
             style="background-image: url('{{ asset('top-wallpaper.jpg') }}'); background-size: cover; background-position: center; height: 180px;">
             <div class="position-relative ps-3 pe-3" style="background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;">
                 <h1 class="mt-1">{{ __('app.top_message') }}</h1>
