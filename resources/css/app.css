@@ -6,3 +6,23 @@
 html {
   scroll-padding-top: 5rem;
 }
+
+body {
+  background-image: url('/public/web-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.94);
+  z-index: -1;
+}
