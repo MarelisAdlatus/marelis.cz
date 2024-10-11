@@ -12,12 +12,20 @@ class DownloadController extends Controller
         
         $request->validate([
             'path' => 'required|string',
+            'pattern' => 'nullable|string',
         ]);
         
         // The SplFileInfo class
         // https://www.php.net/manual/en/class.splfileinfo.php
-
-        $files = File::files(public_path($request->path));
+        
+        $path = public_path($request->path);
+        
+        if ($request->has('pattern')) {
+            $pattern = $request->pattern;
+            $files = File::glob($path . DIRECTORY_SEPARATOR . $pattern);
+        } else {
+            $files = File::files($path);
+        }
 
         $result = array();
 
@@ -28,10 +36,11 @@ class DownloadController extends Controller
         ]);
 
         foreach($files as $file) {
+            $fileInfo = new \SplFileInfo($file);
             $result[] = ([
-                "name" => $file->getFilename(),
-                "size" => Number::fileSize($file->getSize()),
-                "url" => sprintf('%s/%s', asset($request->path), $file->getFilename()),
+                "name" => $fileInfo->getFilename(),
+                "size" => Number::fileSize($fileInfo->getSize()),
+                "url" => sprintf('%s/%s', asset($request->path), $fileInfo->getFilename()),
             ]);
         }
 

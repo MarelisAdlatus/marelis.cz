@@ -368,6 +368,7 @@ $(document).ready(function() {
     $('.download-table').each(function () {
         var self = this;
         var pathAttr = $(self).attr('path');
+        var patternAttr = $(self).attr('pattern');
         $.ajax({
             url: '/download/list',
             type: 'POST',
@@ -376,6 +377,7 @@ $(document).ready(function() {
             },
             data: {
                 path: pathAttr,
+                pattern: patternAttr,
             },
             success: function(data) {
                 var tab = '';
