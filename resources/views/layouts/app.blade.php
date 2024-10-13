@@ -105,5 +105,12 @@
             </footer>
         </div>
     </div>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-consent bg-secondary-subtle text-dark p-2 position-fixed w-100 bottom-0 d-none fs-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>{{ __('cookies.text') }}</span>
+            <button id="accept-cookies" class="btn btn-outline-dark px-3">{{ __('cookies.accept') }}</button>
+        </div>
+    </div>
 </body>
 </html>

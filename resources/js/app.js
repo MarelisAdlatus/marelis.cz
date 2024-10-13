@@ -280,7 +280,18 @@ $('#report-form').on('submit', function(event) {
     });
 });
 
+/* cookie consent banner */
+$('#accept-cookies').on('click', function() {
+    localStorage.setItem('cookiesAccepted', true);
+    $('#cookie-consent-banner').addClass('d-none');
+});
+
 $(document).ready(function() {
+
+    /* cookie consent banner */
+    if (!localStorage.getItem('cookiesAccepted')) {
+        $('#cookie-consent-banner').removeClass('d-none');
+    }
 
     /* highlight code */
     $('.highlight-code').each(function () {
