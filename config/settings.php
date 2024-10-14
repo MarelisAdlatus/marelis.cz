@@ -29,7 +29,7 @@ return [
 
     'project' => [
 
-        'project-1' => [
+        'videotutorial-rs-designspark-mechanical' => [
             'show_version' => 'v1',
         ],
     ],
