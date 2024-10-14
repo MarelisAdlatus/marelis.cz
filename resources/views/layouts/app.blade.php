@@ -26,7 +26,7 @@
                 <p class="mb-1">{{ __('app.top_comment') }}</p>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-sm bg-secondary-subtle navbar-light sticky-top pt-1 pb-1">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     {{ config('app.name', 'Laravel') }}
@@ -74,21 +74,14 @@
                         </li>
                         @endguest
                         <!-- Language switching -->
-                        <li class="nav-item dropdown" id="lang-switcher">
-                            <a id="navbarDropdownLang" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ config('languages')[app()->getLocale()]['display-short'] }}
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                        <div class="btn-group" role="group" aria-label="Language switcher">
                             @foreach (config('languages') as $lang => $language)
-                            @if ($lang != app()->getLocale())
-                                <a class="dropdown-item" href="{{ route('change-lang') }}?lang={{ $lang }}">
-                                    </span>&nbsp;{{$language['display']}}
-                                </a>
-                            @endif
+                            <a href="{{ route('change-lang') }}?lang={{ $lang }}" class="btn btn-outline-secondary {{ $lang === app()->getLocale() ? 'active' : '' }} fs-6"
+                            data-bs-toggle="tooltip" title="{{ $language['display'] }}" data-bs-placement="top">
+                                {{ $language['display-short'] }}
+                            </a>
                             @endforeach
-                            </div>
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -109,7 +102,7 @@
     <div id="cookie-consent-banner" class="cookie-consent bg-secondary-subtle text-dark p-2 position-fixed w-100 bottom-0 d-none fs-5">
         <div class="container d-flex justify-content-between align-items-center">
             <span>{{ __('cookies.text') }}</span>
-            <button id="accept-cookies" class="btn btn-outline-dark px-3">{{ __('cookies.accept') }}</button>
+            <button id="accept-cookies" class="btn btn-outline-secondary btn-sm px-5">{{ __('cookies.accept') }}</button>
         </div>
     </div>
 </body>
