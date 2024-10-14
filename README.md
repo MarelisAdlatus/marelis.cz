@@ -31,6 +31,7 @@ This project runs with **Laravel version 11**
 - [x] Translation of contact emails
 - [x] Reporting software (error, help, other)
 - [x] Syntax highlighting with copy button
+- [x] Cookie consent banner
 
 ## <a id="maybe-in-the-future"></a> Maybe in the future
 
