@@ -62,11 +62,11 @@ for current_argument in sys.argv:
             if extension == ".fbx":
                 bpy.ops.import_scene.fbx(filepath=import_file)
             if extension == ".obj":
-                bpy.ops.import_scene.obj(filepath=import_file)
+                bpy.ops.wm.obj_import(filepath=import_file)
             if extension == ".ply":
-                bpy.ops.import_mesh.ply(filepath=import_file)
+                bpy.ops.wm.ply_import(filepath=import_file)
             if extension == ".stl":
-                bpy.ops.import_mesh.stl(filepath=import_file)
+                bpy.ops.wm.stl_import(filepath=import_file)
             if (
                 extension == ".usd"
                 or extension == ".usda"
