@@ -21,8 +21,11 @@ class DownloadController extends Controller
         $path = public_path($request->path);
         
         if ($request->has('pattern')) {
-            $pattern = $request->pattern;
-            $files = File::glob($path . DIRECTORY_SEPARATOR . $pattern);
+            $patterns = explode(';', $request->pattern);
+            $files = [];
+            foreach ($patterns as $pattern) {
+                $files = array_merge($files, File::glob($path . DIRECTORY_SEPARATOR . trim($pattern)));
+            }
         } else {
             $files = File::files($path);
         }
