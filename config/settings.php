@@ -22,7 +22,7 @@ return [
 
     'model' => [
 
-        'model-1' => [
+        'filament-clip-1-75-mm' => [
             'show_version' => 'v1',
         ],
     ],
