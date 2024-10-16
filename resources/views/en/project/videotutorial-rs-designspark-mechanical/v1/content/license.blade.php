@@ -1,6 +1,6 @@
 <h3 id="license" class="border-bottom border-secondary border-1">License</h3>
 <p class="fs-5">
-This work is licensed under a <a class="external-link" lang="en" id="cc-by-3.0-link" name="CC BY 3.0" href="https://creativecommons.org/licenses/by/3.0/cz/deed.cs" rel="license">Creative Commons Attribution 3.0 Czech Republic License</a>. 
+This work is licensed under a <a class="external-link" lang="en" id="cc-by-3.0-link" name="CC BY 3.0" href="https://creativecommons.org/licenses/by/3.0/cz/deed.cs" rel="license">Creative Commons BY 3.0 Czech Republic License</a>. 
 This means you are free to:
 </p>
 <ul class="fs-5">

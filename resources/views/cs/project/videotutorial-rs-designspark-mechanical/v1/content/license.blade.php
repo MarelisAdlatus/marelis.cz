@@ -1,6 +1,6 @@
 <h3 id="license" class="border-bottom border-secondary border-1">Licence</h3>
 <p class="fs-5">
-Toto dílo podléhá licenci <a class="external-link" lang="cs" id="cc-by-3.0-link" name="CC BY 3.0" href="https://creativecommons.org/licenses/by/3.0/cz/deed.cs" rel="license">Creative Commons 3.0 Česko</a>. 
+Toto dílo podléhá licenci <a class="external-link" lang="cs" id="cc-by-3.0-link" name="CC BY 3.0" href="https://creativecommons.org/licenses/by/3.0/cz/deed.cs" rel="license">Creative Commons BY 3.0 Česko</a>. 
 To znamená, že ho můžete volně:
 </p>
 <ul class="fs-5">
