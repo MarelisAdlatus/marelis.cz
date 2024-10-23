@@ -1,32 +1,5 @@
 <h3 id="about">O modelu</h3>
 <p class="fs-5">Tento model byl mým prvním pokusem jak něco vytvořit v 3D editoru RS DesignSpark Mechanical. 3D výtisky tohoto modelu používám k uchycení konce filamentu na cívce, kterou pak schovávám do původního obalu.</p>
-
-<div class="row mb-3">
-    <div class="container">
-        <div class="row row-cols-auto justify-content-center">
-            <!-- Item -->
-            <div class="col mb-4">
-                <div class="card" style="width: 24rem;">
-                    <div class="border bg-secondary bg-opacity-25 m-2">
-                        <model-viewer src="{{ asset('storage/content/model/filament-clip-1-75-mm/v1/filament-clip-1-75-mm.glb') }}"
-                                    poster="{{ asset('spinner/fade-stagger-circles.svg') }}"
-                                    alt="Glasses 3D model" shadow-intensity="1" camera-controls auto-rotate ar style="width: 100%; height: 320px;">
-                        </model-viewer>
-                    </div>
-                    <div class="card-body">
-                    <p class="card-text fs-5">
-                        <strong>Spona na filament 1,75 mm</strong><br/>
-                        od Marelis Adlatus je licencováno pod
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.cs">
-                            CC BY-SA 4.0
-                        </a>
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="row justify-content-center">
     <div id="carouselAbout" class="carousel carousel-light slide w-75 mb-2" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -68,6 +41,32 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Další</span>
         </button>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="container">
+        <div class="row row-cols-auto justify-content-center">
+            <!-- Item -->
+            <div class="col mb-4">
+                <div class="card" style="width: 24rem;">
+                    <div class="border bg-secondary bg-opacity-25 m-2">
+                        <model-viewer src="{{ asset('storage/content/model/filament-clip-1-75-mm/v1/filament-clip-1-75-mm.glb') }}"
+                                    poster="{{ asset('spinner/fade-stagger-circles.svg') }}"
+                                    alt="Glasses 3D model" shadow-intensity="1" camera-controls auto-rotate ar style="width: 100%; height: 320px;">
+                        </model-viewer>
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text fs-5">
+                        <strong>Spona na filament 1,75 mm</strong><br/>
+                        od Marelis Adlatus je licencováno pod
+                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.cs">
+                            CC BY-SA 4.0
+                        </a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <p class="fs-5">Tento model nabízím zdarma ke stažení na této stránce níže a nebo na webu
