@@ -56,13 +56,13 @@
                         </model-viewer>
                     </div>
                     <div class="card-body">
-                    <p class="card-text fs-5">
-                        <strong>Spona na filament 1,75 mm</strong><br/>
-                        od Marelis Adlatus je licencováno pod
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.cs">
-                            CC BY-SA 4.0
-                        </a>
-                    </p>
+                        <p class="card-text fs-5">
+                            <strong>Spona na filament 1,75 mm</strong><br/>
+                            od Marelis Adlatus je licencováno pod
+                            <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="cs" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.cs">
+                                CC BY-SA 4.0
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

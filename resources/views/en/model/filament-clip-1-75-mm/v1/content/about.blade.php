@@ -56,13 +56,13 @@
                         </model-viewer>
                     </div>
                     <div class="card-body">
-                    <p class="card-text fs-5">
-                        <strong>Filament clip 1.75 mm</strong><br/>
-                        by Marelis Adlatus is licensed under
-                        <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
-                            CC BY-SA 4.0
-                        </a>
-                    </p>
+                        <p class="card-text fs-5">
+                            <strong>Filament clip 1.75 mm</strong><br/>
+                            by Marelis Adlatus is licensed under
+                            <a class="external-link link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" lang="en" name="CC BY-SA 4.0" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+                                CC BY-SA 4.0
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
