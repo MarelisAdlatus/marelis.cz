@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'compass-for-drawing-large-circles' => [
+            'show_version' => 'v1',
+        ],
+
         'filament-clip-1-75-mm' => [
             'show_version' => 'v1',
         ],

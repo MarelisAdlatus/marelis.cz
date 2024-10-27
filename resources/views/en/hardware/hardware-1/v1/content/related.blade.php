@@ -4,6 +4,5 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <!-- Previews -->
         @include('en.software.software-1.v1.preview')
-        @include('en.model.model-1.v1.preview')
     </div>
 </div>
