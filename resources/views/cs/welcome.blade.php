@@ -54,7 +54,7 @@
                 <p class="fs-5">Software vytvářím zejména v jazyce Java a Kotlin. Pro desktopové aplikace s Java používám IDE nástroj <a class="external-link" lang="cs" id="apache-netbeans-link" name="Apache NetBeans" href="https://netbeans.apache.org" data-bs-toggle="tooltip" title="Apache NetBeans">Apache NetBeans</a>, pro mobilní zařízení s OS Android používám nástroj <a class="external-link" lang="cs" id="android-studio-link" name="Android Studio" href="https://netbeans.apache.org" data-bs-toggle="tooltip" title="Android Studio">Android Studio</a> od firmy Google. Webové stránky vytvářím pomocí frameworku <a class="external-link" lang="cs" id="laravel-link" name="Laravel" href="https://laravel.com" data-bs-toggle="tooltip" title="Laravel">Laravel</a>, takže k tomu používám jazyky php, javascript atd. Pro software na mikrokontrolérech ATmega od firmy Atmel používám nástroj <a class="external-link" lang="cs" id="arduino-ide-link" name="Arduino IDE" href="https://www.arduino.cc/en/software" data-bs-toggle="tooltip" title="Arduino IDE">Arduino IDE</a>.</p>
                 <p class="fs-5">Pro prostředí s virtuálními stroji používám <a class="external-link" lang="cs" id="proxmox-virtual-environment-link" name="Proxmox Virtual Environment" href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" data-bs-toggle="tooltip" title="Proxmox Virtual Environment">Proxmox Virtual Environment</a>, ve kterém spouštím různé OS s Windows a distribucemi Linuxu. Obvyklé používám spojení přes SSH, sdílení souborů pomocí Samba a různé nástroje a skripty v konzoli Bash.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.software') as $key => $value)
                         @include($path . '.software.' . $key . '.' . $value['show_version'] . '.preview')
@@ -67,7 +67,7 @@
                 <h3 id="hardware" class="border-bottom border-secondary border-1">Hardware</h3>
                 <p class="fs-5">Pro návrh schémat a plošných spojů používám úžasný balík nástrojů <a class="external-link" lang="cs" id="kicad-eda-link" name="KiCad EDA" href="https://www.kicad.org" data-bs-toggle="tooltip" title="KiCad EDA">KiCad EDA</a>. Podporuje vše od nejzákladnějších schémat až po komplexní hierarchický návrh se stovkami listů. Podle schémat jsou navrženy desky plošných spojů. Pak už jen pořídit součástky, pájet a testovat.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.hardware') as $key => $value)
                         @include($path . '.hardware.' . $key . '.' . $value['show_version'] . '.preview')
@@ -80,7 +80,7 @@
                 <h3 id="models" class="border-bottom border-secondary border-1">Model</h3>
                 <p class="fs-5">Modely vytvářím v mém oblíbeném editoru <a class="external-link" lang="cs" id="rs-design-spark-mechanical-link" name="RS DesignSpark Mechanical" href="https://www.rs-online.com/designspark/mechanical-software" data-bs-toggle="tooltip" title="RS DesignSpark Mechanical">RS DesignSpark Mechanical</a>, ve kterém nacházím vše co potřebuji pro návrh. Hotový model se exportuje do souboru STL, který se v aplikaci <a class="external-link" lang="cs" id="ulti-maker-cura-link" name="UltiMaker Cura" href="https://ultimaker.com/software/ultimaker-cura" data-bs-toggle="tooltip" title="UltiMaker Cura">UltiMaker Cura</a> připraví pro 3D tisk na FDM tiskárně.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.model') as $key => $value)
                         @include($path . '.model.' . $key . '.' . $value['show_version'] . '.preview')
@@ -93,7 +93,7 @@
                 <h3 id="projects" class="border-bottom border-secondary border-1">Projekt</h3>
                 <p class="fs-5">Projekty se většinou skládají z několika částí. K nějakému hardware se napíše software a vytvoří 3D modely. Ty se pak vytisknou a vše se kompletuje dohromady a "oživí". Popřípadě jsou zde aktivity, které se nedají zařadit jinam.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.project') as $key => $value)
                         @include($path . '.project.' . $key . '.' . $value['show_version'] . '.preview')
@@ -104,8 +104,33 @@
             <!-- Contact -->
             <h3 id="contact" class="border-bottom border-secondary border-1">Kontakt</h3>
             <p class="fs-5">Pokud máte nějaké dotazy, nápad na zajímavý projekt nebo spolupráci, tak mi napište. Stačí kliknout na tlačítko níže a vyplnit jednoduchý formulář. Ozvu se Vám co nejdříve a probereme to spolu.</p>
-            <div class="container">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact-form">Poslat zprávu</button>
+            <div class="container mb-4">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact-form">Poslat zprávu</button>
+                    </div>
+                </div>
+                <div class="row fs-5">
+                    <div class="col-xl-6">
+                        <h5 class="fw-bold">Adresa</h5>
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <div>
+                                <p class="mb-0">Marek Liška</p>
+                                <p class="mb-0">Masarykova třída 744</p>
+                                <p class="mb-0">73514 Orlová 4</p>
+                                <p>Česká Republika</p>
+                            </div>
+                        </div>
+                        <p><i class="bi bi-envelope-fill me-2"></i>Email: <a href="mailto:&#109;&#97;&#114;&#101;&#108;&#105;&#115;&#46;&#97;&#100;&#108;&#97;&#116;&#117;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#97;&#114;&#101;&#108;&#105;&#115;&#46;&#97;&#100;&#108;&#97;&#116;&#117;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+                        </p>
+                        <p><i class="bi bi-building me-2"></i>IČ: 03685357</p>
+                    </div>
+                    <div class="col-xl-6 text-center">
+                        <h5 class="fw-bold">Mapa</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.593052621103!2d18.42095897602414!3d49.86888852906749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711561fd4debbe3%3A0x9838b4d731bddb9c!2sMasarykova%20t%C5%99.%20744%2C%20735%2014%20Orlov%C3%A1%204-Lutyn%C4%9B!5e0!3m2!1scs!2scz!4v1730118770857!5m2!1scs!2scz" width="400" height="300" class="border border-secondary shadow rounded" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

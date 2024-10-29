@@ -54,7 +54,7 @@
                 <p class="fs-5">I create software mainly in Java and Kotlin. For desktop applications with Java I use the <a class="external-link" lang="en" id="apache-netbeans-link" name="Apache NetBeans" href="https://netbeans.apache.org" data-bs-toggle="tooltip" title="Apache NetBeans">Apache NetBeans</a> IDE tool, for mobile devices with Android OS I use the <a class="external-link" lang="en" id="android-studio-link" name="Android Studio" href="https://netbeans.apache.org" data-bs-toggle="tooltip" title="Android Studio">Android Studio</a> tool from Google. I create the website using the <a class="external-link" lang="en" id="laravel-link" name="Laravel" href="https://laravel.com" data-bs-toggle="tooltip" title="Laravel">Laravel</a> framework, so I use php, javascript, etc. For the software on Atmel's ATmega microcontrollers, I use the <a class="external-link" lang="en" id="arduino-ide-link" name="Arduino IDE" href="https://www.arduino.cc/en/software" data-bs-toggle="tooltip" title="Arduino IDE">Arduino IDE</a>.</p>
                 <p class="fs-5">For the virtual machine environment, I use <a class="external-link" lang="en" id="proxmox-virtual-environment-link" name="Proxmox Virtual Environment" href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" data-bs-toggle="tooltip" title="Proxmox Virtual Environment">Proxmox Virtual Environment</a>, in which I run various Windows OS and Linux distributions. My usual uses are connecting via SSH, sharing files using Samba, and various tools and scripts in the Bash console.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.software') as $key => $value)
                         @include($path . '.software.' . $key . '.' . $value['show_version'] . '.preview')
@@ -67,7 +67,7 @@
                 <h3 id="hardware" class="border-bottom border-secondary border-1">Hardware</h3>
                 <p class="fs-5">I use the amazing <a class="external-link" lang="en" id="kicad-eda-link" name="KiCad EDA" href="https://www.kicad.org" data-bs-toggle="tooltip" title="KiCad EDA">KiCad EDA</a> toolkit for schematic and PCB design. It supports everything from the most basic schematics to a complex hierarchical design with hundreds of sheets. Circuit boards are designed according to the diagrams. Then just buy the parts, solder and test.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.hardware') as $key => $value)
                         @include($path . '.hardware.' . $key . '.' . $value['show_version'] . '.preview')
@@ -80,7 +80,7 @@
                 <h3 id="models" class="border-bottom border-secondary border-1">Model</h3>
                 <p class="fs-5">I create models in my favorite <a class="external-link" lang="en" id="rs-design-spark-mechanical-link" name="RS DesignSpark Mechanical" href="https://www.rs-online.com/designspark/mechanical-software" data-bs-toggle="tooltip" title="RS DesignSpark Mechanical">RS DesignSpark Mechanical</a> editor, in which I find everything I need for the design. The finished model is exported to an STL file, which is prepared for 3D printing on an FDM printer in the <a class="external-link" lang="en" id="ulti-maker-cura-link" name="UltiMaker Cura" href="https://ultimaker.com/software/ultimaker-cura" data-bs-toggle="tooltip" title="UltiMaker Cura">UltiMaker Cura</a> application.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.model') as $key => $value)
                         @include($path . '.model.' . $key . '.' . $value['show_version'] . '.preview')
@@ -93,7 +93,7 @@
                 <h3 id="projects" class="border-bottom border-secondary border-1">Project</h3>
                 <p class="fs-5">Projects usually consist of several parts. Software is written for some hardware and 3D models are created. They are then printed and everything is put together and "comes to life". In some cases, there are activities that cannot be classified elsewhere.</p>
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="row">
                         <!-- Previews -->
                         @foreach(config('settings.project') as $key => $value)
                         @include($path . '.project.' . $key . '.' . $value['show_version'] . '.preview')
@@ -104,8 +104,33 @@
             <!-- Contact -->
             <h3 id="contact" class="border-bottom border-secondary border-1">Contact</h3>
             <p class="fs-5">If you have any questions, an idea for an interesting project or collaboration, write to me. Just click the button below and fill out a simple form. I will contact you as soon as possible and we will discuss it together.</p>
-            <div class="container mb-2">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact-form">Send message</button>
+            <div class="container mb-4">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact-form">Send Message</button>
+                    </div>
+                </div>
+                <div class="row fs-5">
+                    <div class="col-xl-6">
+                        <h5 class="fw-bold">Address</h5>
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <div>
+                                <p class="mb-0">Marek Liška</p>
+                                <p class="mb-0">Masarykova třída 744</p>
+                                <p class="mb-0">73514 Orlová 4</p>
+                                <p>Czech Republic</p>
+                            </div>
+                        </div>
+                        <p><i class="bi bi-envelope-fill me-2"></i>Email: <a href="mailto:&#109;&#97;&#114;&#101;&#108;&#105;&#115;&#46;&#97;&#100;&#108;&#97;&#116;&#117;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#97;&#114;&#101;&#108;&#105;&#115;&#46;&#97;&#100;&#108;&#97;&#116;&#117;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+                        </p>
+                        <p><i class="bi bi-building me-2"></i>ID: 03685357</p>
+                    </div>
+                    <div class="col-xl-6 text-center">
+                        <h5 class="fw-bold">Map</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.5932351890983!2d18.4235339!3d49.8688851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711561fd4debbe3%3A0x9838b4d731bddb9c!2sMasarykova%20t%C5%99.%20744%2C%20735%2014%20Orlov%C3%A1%204-Lutyn%C4%9B!5e0!3m2!1sen!2scz!4v1730118862097!5m2!1sen!2scz" width="400" height="300" class="border border-secondary shadow rounded" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

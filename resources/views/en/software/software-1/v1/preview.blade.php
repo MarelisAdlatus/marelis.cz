@@ -1,8 +1,8 @@
-<div class="col">
+<div class="col ms-1 me-1" style="max-width: 310px;">
     <h3 class="mt-1"><a class="link-primary text-decoration-none text-uppercase" href="/software/software-1">Software-1</a></h3>
     <h5 class="d-flex justify-content-between">
         <span class="text-truncate">Title description</span>
-        <span class="badge bg-info ms-2 me-1">Soon</span>
+        <span class="badge bg-info ms-2">Soon</span>
     </h5>
     <a href="/software/software-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
