@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'pliers-for-round-objects' => [
+            'show_version' => 'v1',
+        ],
+
         'compass-for-drawing-large-circles' => [
             'show_version' => 'v1',
         ],
