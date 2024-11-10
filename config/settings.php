@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'stand-with-hooks' => [
+            'show_version' => 'v1',
+        ],
+
         'pliers-for-round-objects' => [
             'show_version' => 'v1',
         ],
