@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Dokončeno</span>
     </h5>
     <a href="/model/filament-clip-1-75-mm">
-        <img src="{{ url('storage/content/model/filament-clip-1-75-mm/v1/20230103_213124.jpg') }}" alt="Image" width="300" height="200">
+        <img src="{{ url('storage/content/model/filament-clip-1-75-mm/v1/20230103_213124.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Pomůcka pro 3D tisk</p>
     <p class="fs-5">První 3D model vytvořený v editoru RS DesignSpark Mechanical. Taková malá užitečná věc pro toho, kdo používá cívky na filament pro 3D tisk.</p>

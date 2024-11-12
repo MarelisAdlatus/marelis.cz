@@ -17,10 +17,26 @@
         </div>
         <div class="carousel-inner">
             <!-- Item -->
+            <a href="{{ url('storage/content/model/stand-with-hooks/v1/20240330_090505.jpg') }}" class="glightbox" data-gallery="about">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="d-block w-100">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20240330_090505.jpg') }}" alt="Image">
+                    </div>
+                </div>
+            </a>
+            <!-- Item -->
+            <a href="{{ url('storage/content/model/stand-with-hooks/v1/20241019_130634.jpg') }}" class="glightbox" data-gallery="about">
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-block w-100">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20241019_130634.jpg') }}" alt="Image">
+                    </div>
+                </div>
+            </a>
+            <!-- Item -->
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221118_070924.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221118_070924.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221118_070924.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -28,7 +44,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075527.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075527.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075527.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -36,7 +52,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075630.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075630.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075630.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -44,7 +60,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075635.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075635.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075635.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -52,7 +68,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075836.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075836.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075836.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -60,7 +76,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075843.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075843.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075843.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -68,7 +84,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075907.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075907.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221129_075907.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -76,7 +92,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -84,7 +100,7 @@
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180522.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180522.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180522.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>

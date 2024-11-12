@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Dokončeno</span>
     </h5>
     <a href="/model/pliers-for-round-objects">
-        <img src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image" width="300" height="400">
+        <img src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Pomůcka pro dílnu</p>
     <p class="fs-5">Původně držák pro zdobení vánočních baněk, který se hodí i pro držení dalších věcí.</p>

@@ -17,7 +17,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113748.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113748.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113748.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -25,7 +25,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113805.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113805.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113805.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -33,7 +33,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113811.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113811.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113811.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -41,7 +41,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113841.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113841.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113841.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -49,7 +49,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113849.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113849.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_113849.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -57,7 +57,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150449.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150449.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150449.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -65,7 +65,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150502.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150502.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150502.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>
@@ -73,7 +73,7 @@
             <a href="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150542.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150542.jpg') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/compass-for-drawing-large-circles/v1/20230102_150542.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>

@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Finished</span>
     </h5>
     <a href="/model/filament-clip-1-75-mm">
-        <img src="{{ url('storage/content/model/filament-clip-1-75-mm/v1/20230103_213124.jpg') }}" alt="Image" width="300" height="200">
+        <img src="{{ url('storage/content/model/filament-clip-1-75-mm/v1/20230103_213124.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">A tool for 3D printing</p>
     <p class="fs-5">The first 3D model created in the RS DesignSpark Mechanical editor. Such a useful little thing for someone who uses filament spools for 3D printing.</p>

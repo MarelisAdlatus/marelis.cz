@@ -5,7 +5,7 @@
         <span class="badge bg-warning ms-2">In progress</span>
     </h5>
     <a href="/project/videotutorial-rs-designspark-mechanical">
-        <img src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/01-foto.png') }}" alt="Image" width="300" height="200">
+        <img src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/01-foto.png') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Tutorials for creating 3D</p>
     <p class="fs-5">Instructions on how to familiarize yourself with this very interesting 3D editor by creating various objects. Inspiration for your own creation of 3D objects.</p>

@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Dokončeno</span>
     </h5>
     <a href="/model/stand-with-hooks">
-        <img src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image" width="300" height="400">
+        <img src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Věšák</p>
     <p class="fs-5">Stojan s háčky pro uspořádání věcí nebo vystavení předmětů.</p>

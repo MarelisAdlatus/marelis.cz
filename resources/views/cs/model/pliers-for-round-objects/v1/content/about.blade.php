@@ -10,7 +10,7 @@
             <a href="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image" width="720" height="1280">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image">
                     </div>
                 </div>
             </a>

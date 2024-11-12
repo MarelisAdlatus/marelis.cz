@@ -18,7 +18,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/01-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/01-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/01-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>01. Install version 5</h5>
@@ -30,7 +30,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/02-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/02-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/02-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>02. Introduction</h5>
@@ -42,7 +42,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/03-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/03-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/03-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>03. Box</h5>
@@ -54,7 +54,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/04-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/04-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/04-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>04. S-shaped hook</h5>
@@ -66,7 +66,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/05-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/05-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/05-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>05. A little house</h5>
@@ -78,7 +78,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/06-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/06-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/06-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>06. Screwing</h5>
@@ -90,7 +90,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/07-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/07-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/07-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>07. Clutch</h5>
@@ -102,7 +102,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/08-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/08-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/08-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>08. Installing version 6</h5>
@@ -114,7 +114,7 @@
             <a href="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/09-foto.png') }}" class="glightbox" data-gallery="about">
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
-                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/09-foto.png') }}" alt="Image" width="1280" height="720">
+                        <img class="figure-img img-fluid" src="{{ url('storage/content/project/videotutorial-rs-designspark-mechanical/v1/09-foto.png') }}" alt="Image">
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>09. Text</h5>

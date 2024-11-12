@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Finished</span>
     </h5>
     <a href="/model/pliers-for-round-objects">
-        <img src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image" width="300" height="400">
+        <img src="{{ url('storage/content/model/pliers-for-round-objects/v1/20230103_230746.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Workshop tool</p>
     <p class="fs-5">Originally a holder for decorating Christmas flasks, which is also suitable for holding other things.</p>

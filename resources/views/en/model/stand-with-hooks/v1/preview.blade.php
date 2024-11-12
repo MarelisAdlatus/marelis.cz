@@ -5,7 +5,7 @@
         <span class="badge bg-success ms-2">Finished</span>
     </h5>
     <a href="/model/stand-with-hooks">
-        <img src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image" width="300" height="400">
+        <img src="{{ url('storage/content/model/stand-with-hooks/v1/20221130_180446.jpg') }}" alt="Image" width="300" height="auto">
     </a>
     <p class="fs-5">Hanger</p>
     <p class="fs-5">A stand with hooks for organizing things or displaying objects.</p>
