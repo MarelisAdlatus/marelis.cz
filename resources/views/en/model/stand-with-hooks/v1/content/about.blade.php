@@ -34,7 +34,7 @@
             </a>
             <!-- Item -->
             <a href="{{ url('storage/content/model/stand-with-hooks/v1/20221118_070924.jpg') }}" class="glightbox" data-gallery="about">
-                <div class="carousel-item active" data-bs-interval="3000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <div class="d-block w-100">
                         <img class="figure-img img-fluid" src="{{ url('storage/content/model/stand-with-hooks/v1/20221118_070924.jpg') }}" alt="Image">
                     </div>
