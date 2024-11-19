@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'towel-holder-with-a-letter' => [
+            'show_version' => 'v1',
+        ],
+
         'stand-with-hooks' => [
             'show_version' => 'v1',
         ],
