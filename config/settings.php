@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'stand-for-a-mobile-phone' => [
+            'show_version' => 'v1',
+        ],
+
         'towel-holder-with-a-letter' => [
             'show_version' => 'v1',
         ],

@@ -1,0 +1,2 @@
+<h3 id="construction" class="border-bottom border-secondary border-1">Construction</h3>
+<p class="fs-5">The model is made of several parts and its final form is not difficult to assemble. Anyone can do it with a little skill. The part with the smiley face is inserted into the backrest from the side. Then the backrest is inserted into the stand from the back in the place where the holes with the smiley face outline are.</p>
