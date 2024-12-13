@@ -22,6 +22,10 @@ return [
 
     'model' => [
 
+        'mandala-drawing-templates' => [
+            'show_version' => 'v1',
+        ],
+
         'stand-for-a-mobile-phone' => [
             'show_version' => 'v1',
         ],
