@@ -7,8 +7,15 @@ html {
   scroll-padding-top: 4rem;
 }
 
+.top-wallpaper {
+  background-image: url('/public/top-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
 body {
-  background-image: url('/public/web-background.png');
+  background-image: url('/public/web-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
