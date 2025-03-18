@@ -8,30 +8,19 @@ html {
 }
 
 .top-wallpaper {
-  background-image: url('/public/top-wallpaper.jpg');
+  background-image: url('/public/top-wallpaper-small.jpg');
   background-size: cover;
   background-position: center;
   height: 180px;
 }
 
 body {
-  background-image: url('/public/web-background.jpg');
+  background-image: url('/public/web-background-light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-}
-
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.94);
-  z-index: -1;
 }
 
 #cookie-consent-banner {
