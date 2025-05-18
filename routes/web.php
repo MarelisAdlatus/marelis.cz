@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\CronController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\ReportFormController;
 use App\Http\Controllers\QRCodeController;
@@ -18,6 +19,8 @@ Route::get('/', function () {
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 Route::get('lang/change', [LangController::class, 'change'])->name('change-lang');
+
+Route::get('/cron/queue/{queue}', [CronController::class, 'processQueueJob'])->where('queue', 'default|notification');
 
 Route::post('/contact', [ContactFormController::class, 'ContactForm'])->name('contact.store');
 
