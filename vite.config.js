@@ -15,7 +15,7 @@ export default defineConfig({
         visualizer(),
     ],
     build: {
-        chunkSizeWarningLimit: 1024,
+        chunkSizeWarningLimit: 1280,
         rollupOptions: {
             output: {
                 manualChunks: (id) => {
@@ -25,6 +25,11 @@ export default defineConfig({
                     if (id.includes('three')) return 'three';
                     if (id.includes('wasm')) return 'wasm';
                     if (id.includes('shiki')) return 'shiki';
+                    if (id.includes('cytoscape')) return 'cytoscape';
+                    if (id.includes('chevrotain')) return 'chevrotain';
+                    if (id.includes('langium')) return 'langium';
+                    if (id.includes('d3')) return 'd3';
+                    if (id.includes('mermaid')) return 'mermaid';
                 },
             },
         },

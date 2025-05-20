@@ -74,7 +74,7 @@
 <p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 <div class="container">
     <div class="row justify-content-center mb-2">
-        <div class="plantuml-diagram" path="storage/content/hardware/hardware-1/v1/construction-diagram.en.puml" style="width: 95%"></div>
+        <div class="mermaid-diagram" path="{{ asset('storage/content/hardware/hardware-1/v1/construction-diagram.en.mmd') }}" style="width: 95%"></div>
     </div>
 </div>
 <p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>

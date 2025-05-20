@@ -15,6 +15,13 @@ import Papa from 'papaparse';
 import ApexCharts from 'apexcharts';
 import { ApexChartsLocales } from './locales';
 
+import mermaid from 'mermaid';
+
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'default',
+});
+
 import '@google/model-viewer';
 
 import SunEditor from 'suneditor';
@@ -30,17 +37,17 @@ import { getHighlighterCore } from 'shiki/core';
 import getWasm from 'shiki/wasm';
 
 const highlighter = await getHighlighterCore({
-  themes: [
-    import('shiki/themes/dracula.mjs'),
-    import('shiki/themes/github-dark.mjs'),
-    import('shiki/themes/github-light.mjs'),
-  ],
-  langs: [
-    import('shiki/langs/java.mjs'),
-    import('shiki/langs/kotlin.mjs'),
-    import('shiki/langs/bash.mjs'),
-  ],
-  loadWasm: getWasm
+    themes: [
+        import('shiki/themes/dracula.mjs'),
+        import('shiki/themes/github-dark.mjs'),
+        import('shiki/themes/github-light.mjs'),
+    ],
+    langs: [
+        import('shiki/langs/java.mjs'),
+        import('shiki/langs/kotlin.mjs'),
+        import('shiki/langs/bash.mjs'),
+    ],
+    loadWasm: getWasm
 });
 
 import { HighlightCodeLocales } from './locales';
@@ -54,7 +61,7 @@ $('body').on('click', function (event) {
 });
 
 /* external link */
-$('.external-link').on('click', function(event) {
+$('.external-link').on('click', function (event) {
     event.preventDefault();
     var self = this;
     var nameAttr = $(self).attr('name');
@@ -74,7 +81,7 @@ $('.external-link').on('click', function(event) {
             encoding: 'UTF-8',
             text: btoa(linkAttr),
         },
-        success: function(data) {
+        success: function (data) {
             $('#external-link-message-qrcode').html(data);
         }
     });
@@ -101,18 +108,18 @@ $('.external-link').on('click', function(event) {
     Swal.fire({
         title: locales[langAttr]['message'] + ' ' + nameAttr + ' ?',
         html: '<div id="external-link-message-qrcode">'
-        // temporary spinner
-        + '<img src="data:image/svg+xml;base64,'
-        + '77u/PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgMjAwJz48Y2lyY2xlIGZpbGw9JyM2Qzc1N0QnIHN0cm9rZT0nIzZDNzU'
-        + '3RCcgc3Ryb2tlLXdpZHRoPScxNScgcj0nMTUnIGN4PSc0MCcgY3k9JzEwMCc+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgY2FsY01vZGU9J3NwbGluZScgZHVyPS'
-        + 'cyJyB2YWx1ZXM9JzE7MDsxOycga2V5U3BsaW5lcz0nLjUgMCAuNSAxOy41IDAgLjUgMScgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnIGJlZ2luPSctLjQnPjwvYW5pbWF0ZT48L'
-        + '2NpcmNsZT48Y2lyY2xlIGZpbGw9JyM2Qzc1N0QnIHN0cm9rZT0nIzZDNzU3RCcgc3Ryb2tlLXdpZHRoPScxNScgcj0nMTUnIGN4PScxMDAnIGN5PScxMDAnPjxhbmltYXRlIGF0'
-        + 'dHJpYnV0ZU5hbWU9J29wYWNpdHknIGNhbGNNb2RlPSdzcGxpbmUnIGR1cj0nMicgdmFsdWVzPScxOzA7MTsnIGtleVNwbGluZXM9Jy41IDAgLjUgMTsuNSAwIC41IDEnIHJlcGV'
-        + 'hdENvdW50PSdpbmRlZmluaXRlJyBiZWdpbj0nLS4yJz48L2FuaW1hdGU+PC9jaXJjbGU+PGNpcmNsZSBmaWxsPScjNkM3NTdEJyBzdHJva2U9JyM2Qzc1N0QnIHN0cm9rZS13aW'
-        + 'R0aD0nMTUnIHI9JzE1JyBjeD0nMTYwJyBjeT0nMTAwJz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBjYWxjTW9kZT0nc3BsaW5lJyBkdXI9JzInIHZhbHVlcz0nM'
-        + 'TswOzE7JyBrZXlTcGxpbmVzPScuNSAwIC41IDE7LjUgMCAuNSAxJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScgYmVnaW49JzAnPjwvYW5pbWF0ZT48L2NpcmNsZT48L3N2Zz4="'
-        + ' width="120" height="120"></div><br />'
-        + '<a href="' + linkAttr + '" target="_blank">' + linkAttr + '</a>',
+            // temporary spinner
+            + '<img src="data:image/svg+xml;base64,'
+            + '77u/PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgMjAwJz48Y2lyY2xlIGZpbGw9JyM2Qzc1N0QnIHN0cm9rZT0nIzZDNzU'
+            + '3RCcgc3Ryb2tlLXdpZHRoPScxNScgcj0nMTUnIGN4PSc0MCcgY3k9JzEwMCc+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgY2FsY01vZGU9J3NwbGluZScgZHVyPS'
+            + 'cyJyB2YWx1ZXM9JzE7MDsxOycga2V5U3BsaW5lcz0nLjUgMCAuNSAxOy41IDAgLjUgMScgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnIGJlZ2luPSctLjQnPjwvYW5pbWF0ZT48L'
+            + '2NpcmNsZT48Y2lyY2xlIGZpbGw9JyM2Qzc1N0QnIHN0cm9rZT0nIzZDNzU3RCcgc3Ryb2tlLXdpZHRoPScxNScgcj0nMTUnIGN4PScxMDAnIGN5PScxMDAnPjxhbmltYXRlIGF0'
+            + 'dHJpYnV0ZU5hbWU9J29wYWNpdHknIGNhbGNNb2RlPSdzcGxpbmUnIGR1cj0nMicgdmFsdWVzPScxOzA7MTsnIGtleVNwbGluZXM9Jy41IDAgLjUgMTsuNSAwIC41IDEnIHJlcGV'
+            + 'hdENvdW50PSdpbmRlZmluaXRlJyBiZWdpbj0nLS4yJz48L2FuaW1hdGU+PC9jaXJjbGU+PGNpcmNsZSBmaWxsPScjNkM3NTdEJyBzdHJva2U9JyM2Qzc1N0QnIHN0cm9rZS13aW'
+            + 'R0aD0nMTUnIHI9JzE1JyBjeD0nMTYwJyBjeT0nMTAwJz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBjYWxjTW9kZT0nc3BsaW5lJyBkdXI9JzInIHZhbHVlcz0nM'
+            + 'TswOzE7JyBrZXlTcGxpbmVzPScuNSAwIC41IDE7LjUgMCAuNSAxJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScgYmVnaW49JzAnPjwvYW5pbWF0ZT48L2NpcmNsZT48L3N2Zz4="'
+            + ' width="120" height="120"></div><br />'
+            + '<a href="' + linkAttr + '" target="_blank">' + linkAttr + '</a>',
         showCancelButton: true,
         cancelButtonText: locales[langAttr]['cancel_button'],
         showConfirmButton: true,
@@ -135,14 +142,14 @@ $('.external-link').on('click', function(event) {
 });
 
 /* contact form */
-$('#modal-contact-form').on('hidden.bs.modal', function() { 
+$('#modal-contact-form').on('hidden.bs.modal', function () {
     // modal reset
     $(this).find('form').trigger('reset');
     // clear errors
     $(this).find('input,textarea').removeClass('is-invalid');
     $(this).find('[role="alert"]').html('');
-}) ;
-$('#contact-form').on('submit', function(event) {
+});
+$('#contact-form').on('submit', function (event) {
     event.preventDefault();
     var self = this;
     var langAttr = $(self).attr('lang');
@@ -161,7 +168,7 @@ $('#contact-form').on('submit', function(event) {
         url: '/contact',
         type: 'POST',
         data: $(self).serialize(),
-        success: function() {
+        success: function () {
             Swal.fire({
                 text: locales[langAttr]['message'],
                 icon: "success",
@@ -170,7 +177,7 @@ $('#contact-form').on('submit', function(event) {
                 $('#modal-contact-form').modal('hide');
             });
         },
-        error: function(xhr, status, error) {
+        error: function (xhr, status, error) {
             // there was an error
             var json = (xhr.responseJSON) ? xhr.responseJSON : JSON.parse(xhr.responseText);
             if (json.errors) {
@@ -203,13 +210,13 @@ $('#contact-form').on('submit', function(event) {
                     $('#errorMessage').html('');
                 }
             }
-        }        
+        }
     });
 });
 
 /* wysiwyg editors */
 var wysiwygEditor = [];
-$('.wysiwyg-editor').each(function() {
+$('.wysiwyg-editor').each(function () {
     var self = this;
     var langAttr = $(self).attr('lang');
     wysiwygEditor[self.id] = SunEditor.create(self.id, {
@@ -218,11 +225,11 @@ $('.wysiwyg-editor').each(function() {
         height: 200,
         buttonList: [
             [
-            'undo', 'redo', 'font', 'fontSize', 'formatBlock', 'paragraphStyle', 'blockquote',
-            'bold', 'underline', 'italic', 'strike', 'subscript', 'superscript',
-            'fontColor', 'hiliteColor', 'textStyle', 'removeFormat',
-            'outdent', 'indent', 'align', 'horizontalRule', 'list', 'lineHeight',
-            'table', 'link', 'image', 'fullScreen', 'showBlocks',
+                'undo', 'redo', 'font', 'fontSize', 'formatBlock', 'paragraphStyle', 'blockquote',
+                'bold', 'underline', 'italic', 'strike', 'subscript', 'superscript',
+                'fontColor', 'hiliteColor', 'textStyle', 'removeFormat',
+                'outdent', 'indent', 'align', 'horizontalRule', 'list', 'lineHeight',
+                'table', 'link', 'image', 'fullScreen', 'showBlocks',
             ]
         ],
         lang: SunEditorLang[langAttr]
@@ -230,7 +237,7 @@ $('.wysiwyg-editor').each(function() {
 });
 
 /* report form */
-$('#report-form').on('submit', function(event) {
+$('#report-form').on('submit', function (event) {
     event.preventDefault();
     var self = this;
     var langAttr = $(self).attr('lang');
@@ -238,19 +245,19 @@ $('#report-form').on('submit', function(event) {
     var b64encoded = Base64.fromUint8Array(u8a);
     // submit
     var formData = $(self).serializeArray();
-    formData.push({name: 'message', value: b64encoded});
+    formData.push({ name: 'message', value: b64encoded });
     $.ajax({
         url: '/report',
         type: 'POST',
         data: formData,
-        success: function() {
+        success: function () {
             Swal.fire({
                 text: ReportFormLocales[langAttr]['message'],
                 confirmButtonText: ReportFormLocales[langAttr]['confirm_button'],
                 icon: "success"
             });
         },
-        error: function(xhr, status, error) {
+        error: function (xhr, status, error) {
             // there was an error
             var json = (xhr.responseJSON) ? xhr.responseJSON : JSON.parse(xhr.responseText);
             if (json.errors) {
@@ -276,17 +283,17 @@ $('#report-form').on('submit', function(event) {
                     $('#error-message').html('');
                 }
             }
-        }        
+        }
     });
 });
 
 /* cookie consent banner */
-$('#accept-cookies').on('click', function() {
+$('#accept-cookies').on('click', function () {
     localStorage.setItem('cookiesAccepted', true);
     $('#cookie-consent-banner').addClass('d-none');
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     /* cookie consent banner */
     if (!localStorage.getItem('cookiesAccepted')) {
@@ -305,10 +312,10 @@ $(document).ready(function() {
             code = code.substring(1);
         }
         var html = '<div class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10">'
-          + '<div class="text-uppercase ms-2">' + langAttr + '</div>'
-          + '<button type="button" class="highlight-copy btn btn-outline-dark btn-sm border-0 me-1" data-bs-toggle="tooltip" title="'
-          + HighlightCodeLocales[lang]['copy_button_tooltip'] + '"><i class="bi bi-clipboard fs-4"></i></button>'
-          + '</div>';
+            + '<div class="text-uppercase ms-2">' + langAttr + '</div>'
+            + '<button type="button" class="highlight-copy btn btn-outline-dark btn-sm border-0 me-1" data-bs-toggle="tooltip" title="'
+            + HighlightCodeLocales[lang]['copy_button_tooltip'] + '"><i class="bi bi-clipboard fs-4"></i></button>'
+            + '</div>';
         var highlight = highlighter.codeToHtml(code, {
             lang: langAttr,
             theme: themeAttr
@@ -343,36 +350,36 @@ $(document).ready(function() {
         var self = this;
         var pathAttr = $(self).attr('path');
         Papa.parse(pathAttr,
-        {
-            download: true,
-            skipEmptyLines: true,
-            complete: function(results) {
-                var tab = '';
-                // header
-                var tab = '<thead>';
-                tab += '<tr>';
-                for (var k = 0; k < results.data[0].length; k++) {
-                    tab += '<th class="ps-4 pe-4">' + results.data[0][k] + '</th>';
-                }
-                tab += '</tr>';
-                tab += '</thead>';
-                // body
-                tab += '<tbody>';
-                for (var j = 1; j < results.data.length; j++) {
+            {
+                download: true,
+                skipEmptyLines: true,
+                complete: function (results) {
+                    var tab = '';
+                    // header
+                    var tab = '<thead>';
                     tab += '<tr>';
-                    for (var k = 0; k < results.data[j].length; k++) {
-                        if (results.data[j][k].length < 10) {
-                            tab += '<td class="ps-4 pe-4">' + results.data[j][k] + '</td>';
-                        } else {
-                            tab += '<td class="ps-4 pe-4 text-break">' + results.data[j][k] + '</td>';
-                        }
+                    for (var k = 0; k < results.data[0].length; k++) {
+                        tab += '<th class="ps-4 pe-4">' + results.data[0][k] + '</th>';
                     }
                     tab += '</tr>';
+                    tab += '</thead>';
+                    // body
+                    tab += '<tbody>';
+                    for (var j = 1; j < results.data.length; j++) {
+                        tab += '<tr>';
+                        for (var k = 0; k < results.data[j].length; k++) {
+                            if (results.data[j][k].length < 10) {
+                                tab += '<td class="ps-4 pe-4">' + results.data[j][k] + '</td>';
+                            } else {
+                                tab += '<td class="ps-4 pe-4 text-break">' + results.data[j][k] + '</td>';
+                            }
+                        }
+                        tab += '</tr>';
+                    }
+                    tab += '</tbody>';
+                    $(self).append(tab);
                 }
-                tab += '</tbody>';
-                $(self).append(tab);
-            }
-        });
+            });
     });
 
     /* download table */
@@ -390,7 +397,7 @@ $(document).ready(function() {
                 path: pathAttr,
                 pattern: patternAttr,
             },
-            success: function(data) {
+            success: function (data) {
                 var tab = '';
                 // header
                 var tab = '<thead>';
@@ -415,29 +422,23 @@ $(document).ready(function() {
                 tab += '</tbody>';
                 $(self).append(tab);
             },
-            error: function(data) {
+            error: function (data) {
                 console.log(data);
             }
         });
     });
 
-    /* plantuml diagram */
-    $('.plantuml-diagram').each(function () {
-        var self = this;
-        var linkAttr = $(self).attr('path');
-        $.ajax({
-            url: '/plantuml/file',
-            type: 'POST',
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-            },
-            data: {
-                format: 'svg',
-                path: linkAttr,
-            },
-            success: function(data) {
-                $(self).html(data);
-            }
+    /* mermaid diagram */
+    $('.mermaid-diagram').each(function () {
+        const self = this;
+        const filePath = $(self).attr('path');
+        $.get(filePath, function (data) {
+            const id = 'mermaid-' + Math.random().toString(36).substring(2, 9);
+            mermaid.render(id, data).then(({ svg }) => {
+                self.innerHTML = svg;
+            }).catch((err) => {
+                console.error('Mermaid render error:', err);
+            });
         });
     });
 
@@ -446,7 +447,7 @@ $(document).ready(function() {
         var self = this;
         var linkAttr = $(self).attr('path');
         var langAttr = $(self).attr('lang');
-        $.getJSON(linkAttr, function(data) {
+        $.getJSON(linkAttr, function (data) {
             var options = data;
             options['chart']['locales'] = ApexChartsLocales;
             options['chart']['defaultLocale'] = langAttr;

@@ -7,7 +7,6 @@ use App\Http\Controllers\CronController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\ReportFormController;
 use App\Http\Controllers\QRCodeController;
-use App\Http\Controllers\PlantUMLController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\ContentController;
 
@@ -30,10 +29,6 @@ Route::post('/report', [ReportFormController::class, 'ReportForm']);
 
 Route::controller(QRCodeController::class)->group(function () {
     Route::post('/qrcode/text', 'GenerateFromText');
-});
-
-Route::controller(PlantUMLController::class)->group(function () {
-    Route::post('/plantuml/file', 'GenerateFromFile');
 });
 
 Route::controller(DownloadController::class)->group(function () {

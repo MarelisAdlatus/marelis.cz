@@ -39,6 +39,14 @@ class UploadWorker(appContext: Context, workerParams: WorkerParameters):
 
 <p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
+<div class="container">
+    <div class="row justify-content-center mb-2">
+        <div class="mermaid-diagram" path="{{ asset('storage/content/software/software-1/v1/usage-diagram.en.mmd') }}" style="width: 95%"></div>
+    </div>
+</div>
+
+<p class="fs-5">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
 <div class="highlight-code" lang="bash" theme="dracula">
 #!/bin/bash
 # Declare a variable
