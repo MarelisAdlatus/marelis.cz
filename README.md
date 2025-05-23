@@ -52,7 +52,7 @@ cat config/settings.php
 
 return [
 
-    'admin_email' => 'marelis.adlatus@gmail.com',
+    'admin_email' => 'admin@marelis.cz',
 
     'available_locales' => array('en', 'cs'),
 
@@ -209,9 +209,11 @@ resources/views
 │   │           └── preview.blade.php
 │   └── welcome.blade.php
 ├── layouts
-│   └── app.blade.php
+│   ├── app.blade.php
+│   └── sitemap.blade.php
 └── mail
-    └── contact-mail.blade.php
+    ├── contact-mail.blade.php
+    └── report-mail.blade.php
 ```
 
 > Directory structure with files for content
