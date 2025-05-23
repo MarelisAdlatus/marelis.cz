@@ -10,9 +10,9 @@ This project runs with **Laravel version 11**
 [Maybe in the future](#maybe-in-the-future)\
 [Structure of content and views](#structure-of-content-and-views)\
 [Script for exporting 3D files to GLB format](#script-for-exporting-3d-files-to-glb-format)\
+[Running tasks on a classic web hosting](#running-tasks-on-classic-web-hosting)\
 [Releases](#releases)\
 [Used libraries](#used-libraries)\
-[Used services](#used-services)\
 [License](#license)
 
 ## <a id="what-is-done-and-works"></a> What is done and works
@@ -41,7 +41,6 @@ This project runs with **Laravel version 11**
 - [ ] User's language during registration and login
 - [ ] Advanced user profile with avatar image
 - [ ] User roles and permissions
-- [ ] Upgrade laravel/framework to the latest version
 
 ## <a id="structure-of-content-and-views"></a> Structure of content and views
 
@@ -218,7 +217,7 @@ resources/views
 > Directory structure with files for content
 
 ``` bash
-storage/app/public
+public/storage
 └── content
     ├── hardware
     │   └── hardware-1
@@ -328,7 +327,58 @@ DracoEncoder | Encoded 2453952 vertices, 2464008 indices, raw size: 68745960, en
 Blender quit
 ```
 
+## <a id="running-tasks-on-classic-web-hosting"></a> Running tasks on a classic web hosting
+
+CronController.php was created to run regular tasks via URL. It uses a key that is defined in the project's .env file.
+
+> key definition
+
+``` bash
+CRON_KEY=your-strong-key
+```
+
+> running tasks
+
+``` bash
+https://marelis.cz/cron/queue/default?key=your-strong-key
+https://marelis.cz/cron/queue/notification?key=your-strong-key
+https://marelis.cz/cron/schedule?key=your-strong-key
+```
+
 ## <a id="releases"></a> Releases
+
+### :white_check_mark: Release v0.5
+
+- Added dynamic sitemap.xml
+- Publishing a folder with content
+- Update and adaptation to web hosting
+- Added cron controller
+- Added schedule:run to Cron controller
+- Replacing PlantUML with Mermaid
+
+- New project:
+
+    - Video tutorial RS DesignSpark Mechanical
+
+- New model:
+
+    - Filament Clip 1.75 mm
+    - Compass for drawing large circles
+    - Pliers for round objects
+    - Stand with hooks
+    - Towel holder with a letter
+    - Stand for a mobile phone
+    - Mandala drawing templates
+
+https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.5
+
+### :white_check_mark: Release v0.4
+
+- Translation of contact emails
+- Reporting software (error, help, other)
+- Syntax highlighting with copy button
+
+https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.4
 
 ### :white_check_mark: Release v0.3
 
@@ -356,6 +406,7 @@ https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.1
 - [bootstrap-icons](https://github.com/twbs/icons)
 - [sweetalert2](https://github.com/sweetalert2/sweetalert2)
 - [apexcharts.js](https://github.com/apexcharts/apexcharts.js)
+- [mermaid](https://github.com/mermaid-js/mermaid)
 - [PapaParse](https://github.com/mholt/PapaParse)
 - [model-viewer](https://github.com/google/model-viewer)
 - [zoomist](https://github.com/cotton123236/zoomist)
@@ -364,11 +415,6 @@ https://github.com/MarelisAdlatus/web-marelis/releases/tag/v0.1
 - [suneditor](https://github.com/JiHong88/suneditor)
 - [pako](https://github.com/nodeca/pako)
 - [js-base64](https://github.com/dankogai/js-base64)
-
-## <a id="used-services"></a> Used services
-
-- [plantuml-server](https://github.com/plantuml/plantuml-server)
-- [tomcat](https://github.com/apache/tomcat)
 
 ## <a id="license"></a> License
 
